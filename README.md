@@ -1,5 +1,24 @@
 ## AlphaPlayer
 
+### Update
+- 🔥20251230：使用py3重写，优化图像序列索引，imagick 使用新版指令
+
+### Install
+除了文件中必要的`py`包，你还需要安装 `ffmpeg` 和 `imagemagick` 工具：
+
+#### Linux
+```bash
+sudo apt-get update
+sudo apt-get install ffmpeg imagemagick libmagickwand-dev
+```
+
+#### MacOS
+```bash
+brew install ffmpeg imagemagick
+```
+
+---
+---
 > Powered by ByteDance Live.
 
 AlphaPlayer是直播中台使用的一个视频动画特效SDK，可以通过制作Alpha通道分离的视频素材，再在客户端上通过OpenGL ES重新实现Alpha通道和RGB通道的混合，从而实现在端上播放带透明通道的视频。
